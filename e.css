@@ -1,0 +1,173 @@
+.fixed-nav {
+      position: fixed;   /* 画面に対して位置を固定 */
+      top: 20px;         /* 上からの距離 */
+      right: 20px;       /* 右からの距離 */
+      z-index: 1000;     /* 他の文章の下に隠れないように手前に表示 */
+      background: #fff;  /* 背景色（文字が読みにくくならないよう指定） */
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .fixed-nav a {
+      display: block;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 10px 15px;
+    }
+
+    .fixed-nav a:hover {
+      color: #48910d;
+    }
+
+
+
+    /* イラスト展示*/
+
+    body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* 隠しておくMarkdownの生テキストエリア */
+#markdown-source {
+    display: none;
+}
+
+/* ギャラリーのグリッド設定（ピクシブ風） */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.gallery-subete {
+    margin-top: 60px;
+}
+
+/* サムネイルの枠（正方形を維持） */
+.thumbnail {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #ddd;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+    transform: translateY(-3px);
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+/* --- モーダル（拡大表示）のスタイル --- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* 画像とタイトルを縦に並べるボックス */
+.modal-content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* 拡大された画像本体 */
+.modal-content {
+    max-width: 100%;
+    max-height: 75vh; /* 画面の高さに合わせて調整 */
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* 画像の下に出るタイトルのスタイル */
+#modalCaption {
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 閉じるボタン（×マーク） */
+.close-btn {
+    position: fixed;       /* absolute から fixed に変更して画面に固定 */
+    top: 20px;
+    left: 30px;
+    color: #ffffff;        /* 文字色をはっきりした白に */
+    font-size: 50px;       /* 少し大きくする */
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1010;         /* モーダル背景（1000）より手前に必ず表示させる */
+    user-select: none;     /* 文字を選択できないようにして押しやすくする */
+}
+
+.close-btn:hover {
+    color: #ffcccc;        /* ホバーしたときに少し色を変える */
+}
+
+
+/* タブボタンのレイアウト */
+.tab-container {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    margin-bottom: 25px;
+}
+
+.tab-btn {
+    padding: 10px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.tab-btn:hover {
+    background-color: #d0d0d0;
+}
+
+/* 選択されているタブの色 */
+.tab-btn.active {
+    background-color: #333;
+    color: #fff;
+}

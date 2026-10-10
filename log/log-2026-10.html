@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10月の日記</title>
+    <link href="../log.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+<div class="log-subete">
+    <h1 class="tuki">10月の日記</h1>
+    <div id="log-container"></div>
+    <div class="fixed-nav">
+    <a href="../e.html">絵</a>
+    </div>
+</div>
+
+
+<!-- ここからログ -->
+    <script>
+        const markdownText = `
+テスト
+
+---
+
+テスト
+
+---
+
+テスト
+        `;
+
+        document.getElementById('log-container').innerHTML = marked.parse(markdownText);
+    </script>
+</body>
+</html>

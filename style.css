@@ -1,0 +1,29 @@
+.top {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.top-e {
+    width: 280px;
+}
+
+.nabi {
+    margin-top: 20px;
+}
+
+.nabi-link {
+    margin: 20px;
+    font-size: large;
+    color: aliceblue;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: rgb(127, 183, 221);
+    padding: 12px;
+    cursor: pointer;
+}
+
+.about {
+    margin: 40px 20px;
+    padding: 10px;
+    border: dashed 2px;
+}

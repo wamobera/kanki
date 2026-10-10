@@ -1,0 +1,35 @@
+.fixed-nav {
+      position: fixed;   /* 画面に対して位置を固定 */
+      top: 20px;         /* 上からの距離 */
+      right: 20px;       /* 右からの距離 */
+      z-index: 1000;     /* 他の文章の下に隠れないように手前に表示 */
+      background: #fff;  /* 背景色（文字が読みにくくならないよう指定） */
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .fixed-nav a {
+      display: block;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 10px 15px;
+    }
+
+    .fixed-nav a:hover {
+      color: #48910d;
+    }
+
+.log-top {
+     text-align: center;
+}
+
+
+.log-zenbu {
+    margin: 50px;
+}
+
+li {
+    list-style: none;
+}
