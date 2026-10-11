@@ -21,8 +21,11 @@ async function loadGallery(filename) {
             imgElem.src = imgPath;
             imgElem.alt = altText;
 
+            imgElem.loading = "lazy";
+
             thumbDiv.appendChild(imgElem);
             container.appendChild(thumbDiv);
+            
         }
 
         // 新しく表示されたサムネイルに対して拡大機能を再度有効化
