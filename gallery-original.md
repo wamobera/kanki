@@ -3,7 +3,7 @@
 ![らくがき](image/itizi/2026-10/らくがき1.webp)
 ![らくがき](image/itizi/2026-10/らくがき2.webp)
 ![らくがき](image/itizi/2026-10/らくがき3.webp)
-![らくがき](image/itizi/2026-10/耳.jpg)
+![らくがき](image/itizi/2026-10/耳.webp)
 ![りんごの妖精](image/itizi/2026-10/りんご.webp)
 ![ガチャとかでありそう](image/itizi/2026-10/コンセント.webp)
 ![ファンシーラットかわいい](image/itizi/2026-10/ファンシーラット.webp)
