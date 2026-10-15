@@ -1,5 +1,5 @@
 // === ここをあなたのGASのURLに書き換える ===
-const GAS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzAwlwSr06LM6Sfa2sjMNwS1nbyIPjrze5FVD5D3vpE_eETwP_T5EjN1UbdRj9O0USq/exec";
+const GAS_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyqPVbXn0rexxxnNAc0IAGh8W7NYmtt7hH7cnkg0DVgEGELD9wjNzwTTyc0LbEhS3g/exec";
 // ===========================================
 
 document.addEventListener("DOMContentLoaded", function() {
