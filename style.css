@@ -27,3 +27,56 @@
     padding: 10px;
     border: dashed 2px;
 }
+
+
+/* 参拝コーナーのスタイル */
+.worship-area {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+.worship-mascot {
+  max-width: 150px; /* 絵のサイズ調整 */
+  height: auto;
+  margin-bottom: 15px;
+}
+.worship-message {
+  font-size: 0.9em;
+  color: #666;
+}
+/* CSS */
+
+/* 画像ボタン自体のスタイル */
+.worship-btn {
+  background: none;       /* 背景を透明に */
+  padding: 0;             /* 余白を消す */
+  cursor: pointer;        /* マウスカーソルを指の形に */
+  outline: none;         /* クリック時の青い枠線を消す（必要に応じて） */
+  transition: opacity 0.2s; /* ホバー時の動きを滑らかに */
+}
+
+/* ボタンの中の画像のスタイル */
+.worship-btn img {
+  max-width: 150px;       /* ボタンの横幅を調整（お好みで） */
+  height: auto;           /* 縦横比を維持 */
+  display: block;         /* 下の隙間を消す */
+}
+
+/* マウスを乗せたとき（ホバー）の演出 */
+.worship-image-btn:hover {
+  opacity: 0.8;           /* 少し透明にする */
+}
+
+/* クリックした瞬間（アクティブ）の演出 */
+.worship-image-btn:active {
+  transform: translateY(1px); /* 少し下に沈ませる */
+}
+
+/* ★「本日参拝済み」になったとき（無効化）のスタイル */
+.worship-image-btn:disabled {
+  cursor: not-allowed;    /* 禁止マークのカーソルに */
+  opacity: 0.5;           /* 薄くする */
+  filter: grayscale(100%); /* 白黒にする（お好みで） */
+}
