@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const today = new Date().toLocaleDateString("sv-SE"); // yyyy-mm-dd
   
   // 画像のパス（必要に応じてファイル名に合わせてください）
-  const imgStart = "path/to/your/button_image.png";        // 「参拝する」画像
-  const imgDone = "path/to/your/button_image_done.png";   // 「参拝済み」画像
+  const imgStart = "image/参拝ボタン.webp";        // 「参拝する」画像
+  const imgDone = "image/参拝ボタン.webp";   // 「参拝済み」画像
   
   // 1. 自分のブラウザに「今日の参拝記録」があるかチェック
   const myVisitStatus = localStorage.getItem("worship_" + today);
